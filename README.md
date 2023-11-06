@@ -1,6 +1,10 @@
 # angelo-readme-generator
 Module 9 Challenge for UT Full-Stack Bootcamp
 
+## Resources
+(Starter Code)[https://github.com/coding-boot-camp/potential-enigma]
+(Professional Readme Guide)[https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide]
+
 GIVEN a command-line application that accepts user input
 
 WHEN I am prompted for information about my application repository
