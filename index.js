@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const generator = require('./utils/generateMarkdown.js')
 const fs = require('fs');
+//#endregion
 
 const questions = [{
         type: 'input',
@@ -103,7 +104,11 @@ const questions = [{
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
-        fs.writeFile('README.md', generator.generateMarkdown(data));
+        var readmeMarkdown = generator.generateMarkdown(data)
+        fs.writeFile('./exports/README.md', readmeMarkdown, (err) => {
+            err ? console.error(err) : console.log('Success!');
+        });
+        fs.WriteFileSync
     })
     .then(() => {
         console.log('README file successfully generated');
