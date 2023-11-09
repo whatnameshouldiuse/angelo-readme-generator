@@ -108,7 +108,6 @@ function init() {
         fs.writeFile('./exports/README.md', readmeMarkdown, (err) => {
             err ? console.error(err) : console.log('Success!');
         });
-        fs.WriteFileSync
     })
     .then(() => {
         console.log('README file successfully generated');
